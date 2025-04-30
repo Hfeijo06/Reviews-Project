@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function PerfilPage() {
   return (
     <div className="min-h-screen bg-gray-100 p-4 flex justify-center items-center">
-      <div className="bg-white shadow-xl rounded-2xl p-6 w-full max-w-3xl w-full">
+      <div className="bg-white shadow-xl rounded-2xl p-6 max-w-3xl w-full">
         <div className="absolute top-5 left-5 mb-4">
           <Link to="/" className="text-gray-700 hover:text-black text-xl">
             <i className="fa-solid fa-arrow-left"></i>
