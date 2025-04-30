@@ -25,7 +25,6 @@ function PerfilPage() {
           </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }

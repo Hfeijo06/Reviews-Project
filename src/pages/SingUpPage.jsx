@@ -57,7 +57,6 @@ function SingUpPage() {
           </Link>
         </p>
       </div>
-      <div></div>
     </div>
   );
 }
