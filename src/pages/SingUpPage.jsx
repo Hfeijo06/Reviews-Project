@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function LoginPage() {
+function SingUpPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="absolute top-5 left-5 mb-4">
@@ -9,8 +9,16 @@ function LoginPage() {
         </Link>
       </div>
       <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Criar Conta</h2>
         <form className="space-y-4">
+          <div>
+            <label className="block text-gray-700">Nome</label>
+            <input
+              type="text"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              required
+            />
+          </div>
           <div>
             <label className="block text-gray-700">Email</label>
             <input
@@ -27,17 +35,25 @@ function LoginPage() {
               required
             />
           </div>
+          <div>
+            <label className="block text-gray-700">Confirmar Senha</label>
+            <input
+              type="password"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              required
+            />
+          </div>
           <button
             type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
           >
-            Entrar
+            Cadastrar
           </button>
         </form>
         <p className="mt-4 text-sm text-center text-gray-600">
-          Ainda não tem uma conta?
-          <Link to="/singup">
-            <span className="text-blue-500 cursor-pointer">Cadastre-se</span>
+          Já tem uma conta?
+          <Link to="/login">
+            <span className="text-blue-500 cursor-pointer">Faça login</span>
           </Link>
         </p>
       </div>
@@ -45,4 +61,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default SingUpPage;
